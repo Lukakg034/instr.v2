@@ -1,0 +1,92 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Content Section */
+.content-section {
+  padding: 2rem;
+  text-align: center;
+  background-color: white;
+  margin-bottom: 2rem;
+}
+
+.content-section h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.families-container,
+.instrument-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.family-card,
+.instrument-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.family-card img,
+.instrument-card img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.family-card:hover,
+.instrument-card:hover {
+  transform: scale(1.05);
+}
+
+.family-card h3,
+.instrument-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
